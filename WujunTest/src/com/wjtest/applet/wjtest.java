@@ -10,13 +10,18 @@ import javacard.framework.APDU;
 
 /**
  * @author Wu Jun
- *
+ * 2nd changes
  */
 public class wjtest extends Applet {
 	public static void install(byte[] bArray, short bOffset, byte bLength) {
 		// GP-compliant JavaCard applet registration
 		new com.wjtest.applet.wjtest().register(bArray, (short) (bOffset + 1),
 				bArray[bOffset]);
+		
+		
+		byte[] b1;
+		
+		
 	}
 
 	public void process(APDU apdu) {
